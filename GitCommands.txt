@@ -1,0 +1,37 @@
+# Commands to run in Git-BASH
+# Created...years ago by J.D. Muehlbauer
+# Modified by J.D. Muehlbauer 2024-07-11.
+
+# Create a new repo on GitHub (https://github.com/new).
+# I recommend using a private repo, a Creative Commons license, and not adding a README or gitignore.
+# Instead, create a README and gitignore locally, then push those to GitHub.
+# Usually easier to make the repo name without spaces or special characters.
+# Typing a brief repo description is also a nice touch, as is adding Topics (e.g., "r") after creating the repo.
+
+# Locally, in GitBash, initialize git repository (only need to do this the first time).
+git init
+
+# Add the remote GitHub repository (only need to do this the first time).
+# Specify path based on your GitHub profile and desired repo name (repo already created in GitHub).
+git remote add origin https://github.com/jmuehlbauer-usgs/FloodRecovery.git
+
+# Pull from GitHub repository (if there's newer stuff on GitHub--often the license file)
+git pull origin main
+# If you get an error here, type instead:
+git pull origin main --allow-unrelated-histories
+
+# Add files to commit (add file or folder names after "add", separated by spaces, or all -A).
+git status
+git add -A
+
+# Delete files, if desired (add file or folder names after "rm", separated by spaces).
+git rm
+
+# Commit the changes (Write a short message explaining what you changed after "-m", in quotes).
+# Standard practice for the first commit i sfor the message to be "Initial commit."
+git commit -a -m "Initial commit."
+
+# Push committed changes to GitHub
+git push origin main
+
+
